@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>New Approach</title>
+</head>
+<body>
+    <header>KẾT QUẢ THỰC NGHIỆM</header>
+    <d>Mô tả chi tiết</d>
+    <br>
+    <button><a href="./index.html">Old Approach</a></button>
+    <button><a href="./ProposedCNNArchitecture.html">Old Approach Custom</a></button>
+    <button><a href="./NewApproach.html">New Approach</a></button>
+    <button><a href="./NewApproach_Transfer.html">New Approach Transfer</a></button>
+    <table>
+        <thead>
+        <tr>
+            <th rowspan="2">IO-steps</th>
+            <th rowspan="1" colspan="2"> Model </th>
+            <th rowspan="2">Accuracy</th>
+            <th colspan="5">Precision</th>
+            <th colspan="5">Sensitive</th>
+            <th colspan="5">F1 score</th>
+            <th rowspan="2">Sensitive Chart </th>
+        </tr>
+        <tr>
+            <th>Regression</th>
+            <th>Classification</th>
+            <th>N</th>
+            <th>S</th>
+            <th>V</th>
+            <th>F</th>
+            <th>Q</th>
+            <th>N</th>
+            <th>S</th>
+            <th>V</th>
+            <th>F</th>
+            <th>Q</th>
+            <th>N</th>
+            <th>S</th>
+            <th>V</th>
+            <th>F</th>
+            <th>Q</th>
+        </tr>
+        </thead>
+        <tbody>
+    <!-- Step 1-1 -->
+    <!-- LSTM -->
+        <tr>
+            <th rowspan="16">1-1</th>
+            <td rowspan="8">LSTM</td>
+        </tr>
+        <tr>
+            <td>LSTM</td>
+            <td>82%</td>
+            <td>0.82</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.88</td>
+            <td>0.93</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.91</td>
+            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.90</td>
+            <td> <a class="js-show-chart1"> <i class="fa fa-bar-chart"></i> </a> </td>
+        </tr>
+        <tr>
+            <td>CNN</td>
+            <td>55%</td>
+            <td>0.91</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.85</td> 
+            <td>0.56</td> <td>0.00</td> <td>0.42</td> <td>0.00</td> <td>0.85</td>
+            <td>0.70</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.85</td>
+            <td><a class="js-show-chart2"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>MultinomialNB</td>
+            <td>78%</td>
+            <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+            <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
+            <td>0.88</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.42</td>
+            <td><a class="js-show-chart3"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>SGDClassifier</td>
+            <td>81%</td>
+            <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.53</td>
+            <td><a class="js-show-chart4"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>BernoulliNB</td>
+            <td>81%</td>
+            <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.53</td>
+            <td><a class="js-show-chart5"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>PassiveAggressiveClassifier</td>
+            <td>81%</td>
+            <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.34</td>
+            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.50</td>
+            <td><a class="js-show-chart6"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>XGBoost</td>
+            <td>82%</td>
+            <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
+            <td>0.90</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.58</td>
+            <td><a class="js-show-chart7"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+    <!--CNN-->
+        <tr>
+            <td rowspan="8">CNN</td>
+        </tr>
+        <tr>
+            <td>LSTM</td>
+            <td>80%</td>
+            <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
+            <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td>
+            <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td>
+            <td> <a class="js-show-chart8"> <i class="fa fa-bar-chart"></i> </a> </td>
+        </tr>
+        <tr>
+            <td>CNN</td>
+            <td>41%</td>
+            <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+            <td>0.39</td> <td>0.00</td> <td>0.57</td> <td>0.00</td> <td>0.80</td>
+            <td>0.52</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.84</td>
+            <td><a class="js-show-chart9"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>MultinomialNB</td>
+            <td>84%</td>
+            <td>0.85</td> <td>0.10</td> <td>0.11</td> <td>0.00</td> <td>0.89</td> 
+            <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td>
+            <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
+            <td><a class="js-show-chart10"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>SGDClassifier</td>
+            <td>86%</td>
+            <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td>
+            <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td>
+            <td><a class="js-show-chart11"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>BernoulliNB</td>
+            <td>68%</td>
+            <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td> 
+            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+            <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+            <td><a class="js-show-chart12"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>PassiveAggressiveClassifier</td>
+            <td>86%</td>
+            <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
+            <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td>
+            <td><a class="js-show-chart13"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+        <tr>
+            <td>XGBoost</td>
+            <td>85%</td>
+            <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
+            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td>
+            <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
+            <td><a class="js-show-chart14"><i class="fa fa-bar-chart"></i></a></td>
+        </tr>
+
+    <!-- Step 2-1 -->
+    <!-- LSTM -->
+    <tr>
+        <th rowspan="16">2-1</th>
+        <td rowspan="8">LSTM</td>
+    </tr>
+    <tr>
+        <td>LSTM</td>
+        <td>85%</td>
+        <td>0.86</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.88</td>
+        <td>0.98</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.88</td>
+        <td>0.92</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.88</td>
+        <td> <a class="js-show-chart15"> <i class="fa fa-bar-chart"></i> </a> </td>
+    </tr>
+    <tr>
+        <td>CNN</td>
+        <td>41%</td>
+        <td>0.91</td> <td>0.07</td> <td>0.05</td> <td>0.00</td> <td>0.90</td> 
+        <td>0.41</td> <td>0.00</td> <td>0.60</td> <td>0.00</td> <td>0.57</td>
+        <td>0.57</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.70</td>
+        <td><a class="js-show-chart16"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>MultinomialNB</td>
+        <td>81%</td>
+        <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
+        <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.61</td>
+        <td><a class="js-show-chart17"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>SGDClassifier</td>
+        <td>83%</td>
+        <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.70</td>
+        <td><a class="js-show-chart18"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>BernoulliNB</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+        <td><a class="js-show-chart19"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>PassiveAggressiveClassifier</td>
+        <td>80%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td>
+        <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.46</td>
+        <td><a class="js-show-chart20"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>XGBoost</td>
+        <td>84%</td>
+        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td>
+        <td>0.91</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.75</td>
+        <td><a class="js-show-chart21"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+<!--CNN-->
+    <tr>
+        <td rowspan="8">CNN</td>
+    </tr>
+    <tr>
+        <td>LSTM</td>
+        <td>83%</td>
+        <td>0.83</td> <td>0.00</td> <td>0.14</td> <td>0.00</td> <td>0.88</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.56</td>
+        <td>0.90</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.69</td>
+        <td> <a class="js-show-chart22"> <i class="fa fa-bar-chart"></i> </a> </td>
+    </tr>
+    <tr>
+        <td>CNN</td>
+        <td>50%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.93</td> 
+        <td>0.56</td> <td>0.00</td> <td>0.49</td> <td>0.00</td> <td>0.39</td>
+        <td>0.66</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.55</td>
+        <td><a class="js-show-chart23"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>MultinomialNB</td>
+        <td>82%</td>
+        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
+        <td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td>
+        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
+        <td><a class="js-show-chart24"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>SGDClassifier</td>
+        <td>85%</td>
+        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td>
+        <td>0.92</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.83</td>
+        <td><a class="js-show-chart25"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>BernoulliNB</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
+        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
+        <td><a class="js-show-chart26"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>PassiveAggressiveClassifier</td>
+        <td>86%</td>
+        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td>
+        <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
+        <td><a class="js-show-chart27"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>XGBoost</td>
+        <td>85%</td>
+        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td>
+        <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td>
+        <td><a class="js-show-chart28"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <!-- Step 5-1 -->
+    <!-- LSTM -->
+    <tr>
+        <th rowspan="16">5-1</th>
+        <td rowspan="8">LSTM</td>
+    </tr>
+    <tr>
+        <td>LSTM</td>
+        <td>80%</td>
+        <td>0.81</td> <td>0.04</td> <td>0.06</td> <td>0.00</td> <td>0.86</td>
+        <td>0.98</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.40</td>
+        <td>0.89</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.54</td>
+        <td> <a class="js-show-chart29"> <i class="fa fa-bar-chart"></i> </a> </td>
+    </tr>
+    <tr>
+        <td>CNN</td>
+        <td>40%</td>
+        <td>0.82</td> <td>0.11</td> <td>0.06</td> <td>0.00</td> <td>0.91</td> 
+        <td>0.47</td> <td>0.00</td> <td>0.64</td> <td>0.00</td> <td>0.09</td>
+        <td>0.59</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.16</td>
+        <td><a class="js-show-chart30"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>MultinomialNB</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+        <td><a class="js-show-chart31"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>SGDClassifier</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+        <td><a class="js-show-chart32"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>BernoulliNB</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td><a class="js-show-chart33"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>PassiveAggressiveClassifier</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+        <td><a class="js-show-chart34"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>XGBoost</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.85</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
+        <td><a class="js-show-chart35"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+<!--CNN-->
+    <tr>
+        <td rowspan="8">CNN</td>
+    </tr>
+    <tr>
+        <td>LSTM</td>
+        <td>82%</td>
+        <td>0.83</td> <td>0.00</td> <td>0.14</td> <td>0.00</td> <td>0.88</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.56</td>
+        <td>0.90</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.69</td>
+        <td> <a class="js-show-chart36"> <i class="fa fa-bar-chart"></i> </a> </td>
+    </tr>
+    <tr>
+        <td>CNN</td>
+        <td>52%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.93</td> 
+        <td>0.56</td> <td>0.00</td> <td>0.49</td> <td>0.00</td> <td>0.39</td>
+        <td>0.66</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.55</td>
+        <td><a class="js-show-chart37"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>MultinomialNB</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+        <td><a class="js-show-chart38"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>SGDClassifier</td>
+        <td>82%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td>
+        <td><a class="js-show-chart39"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>BernoulliNB</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td><a class="js-show-chart40"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>PassiveAggressiveClassifier</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td><a class="js-show-chart41"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+    <tr>
+        <td>XGBoost</td>
+        <td>79%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+        <td><a class="js-show-chart42"><i class="fa fa-bar-chart"></i></a></td>
+    </tr>
+
+<!-- Step 10-1 -->
+<!-- LSTM -->
+<tr>
+    <th rowspan="16">10-1</th>
+    <td rowspan="8">LSTM</td>
+</tr>
+<tr>
+    <td>LSTM</td>
+    <td>74%</td>
+    <td>0.83</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> <td>0.40</td> 
+    <td>0.89</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.63</td>
+    <td>0.85</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.49</td>
+    <td> <a class="js-show-chart43"> <i class="fa fa-bar-chart"></i> </a> </td>
+</tr>
+<tr>
+    <td>CNN</td>
+    <td>61%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.08</td> <td>0.14</td> <td>0.89</td> 
+    <td>0.68</td> <td>0.00</td> <td>0.46</td> <td>0.30</td> <td>0.52</td>
+    <td>0.74</td> <td>0.00</td> <td>0.14</td> <td>0.19</td> <td>0.65</td>
+    <td><a class="js-show-chart44"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>MultinomialNB</td>
+    <td>80%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+    <td><a class="js-show-chart45"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>SGDClassifier</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.24</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+    <td><a class="js-show-chart46"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>BernoulliNB</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td><a class="js-show-chart47"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>PassiveAggressiveClassifier</td>
+    <td>82%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
+    <td><a class="js-show-chart48"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>XGBoost</td>
+    <td>81%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.43</td>
+    <td><a class="js-show-chart49"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<!--CNN-->
+<tr>
+    <td rowspan="8">CNN</td>
+</tr>
+<tr>
+    <td>LSTM</td>
+    <td>81%</td>
+    <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.72</td> 
+    <td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td>
+    <td> <a class="js-show-chart50"> <i class="fa fa-bar-chart"></i> </a> </td>
+</tr>
+<tr>
+    <td>CNN</td>
+    <td>25%</td>
+    <td>0.90</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.79</td> 
+    <td>0.21</td> <td>0.00</td> <td>0.74</td> <td>0.00</td> <td>0.48</td>
+    <td>0.34</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.60</td>
+    <td><a class="js-show-chart51"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>MultinomialNB</td>
+    <td>82%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+    <td><a class="js-show-chart52"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>SGDClassifier</td>
+    <td>82%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
+    <td><a class="js-show-chart53"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>BernoulliNB</td>
+    <td>80%</td>
+    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td> 
+    <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.36</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
+    <td><a class="js-show-chart54"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>PassiveAggressiveClassifier</td>
+    <td>82%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
+    <td><a class="js-show-chart55"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+<tr>
+    <td>XGBoost</td>
+    <td>82%</td>
+    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.63</td>
+    <td><a class="js-show-chart56"><i class="fa fa-bar-chart"></i></a></td>
+</tr>
+        </tbody>
+    </table>
+
+<!--Dòng 1-1-->
+<!--LSTM-->
+<!--LSTM-->
+    <div class="chart chart1">
+            <img class="container" src="./chart/New Approach/1-1/LSTM_LSTM.png" alt="">
+    </div>
+    <script>
+        const openCharts1= document.querySelectorAll('.js-show-chart1')
+        const chart1= document.querySelector('.chart1')
+        function showChart() {  
+            chart1.classList.add('open')
+        } 
+        function hideChart1() {  
+            chart1.classList.remove('open')
+        } 
+        for( const openChart of openCharts1){
+            openChart.addEventListener('click',showChart)
+        }
+        chart1.addEventListener('click',hideChart1)
+        document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            // Xử lý khi phím Esc được nhấn ở đây
+            hideChart1()
+            }
+        });
+    </script>
+<!--CNN-->
+    <div class="chart chart2">
+            <img class="container" src="./chart/New Approach/1-1/LSTM_CNN.png" alt="">
+    </div>
+    <script>
+        const openCharts2= document.querySelectorAll('.js-show-chart2')
+        const chart2= document.querySelector('.chart2')
+        function showChart() {  
+            chart2.classList.add('open')
+        } 
+        function hideChart2() {  
+            chart2.classList.remove('open')
+        } 
+        for( const openChart of openCharts2){
+            openChart.addEventListener('click',showChart)
+        }
+        chart2.addEventListener('click',hideChart2)
+        document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            // Xử lý khi phím Esc được nhấn ở đây
+            hideChart2()
+            }
+        });
+    </script>
+<!--MultinomialNB-->
+    <div class="chart chart3">
+        <img class="container" src="./chart/New Approach/1-1/LSTM_MultinomialNB.png" alt="">
+    </div>
+    <script>
+const openCharts3= document.querySelectorAll('.js-show-chart3')
+const chart3= document.querySelector('.chart3')
+function showChart() {  
+    chart3.classList.add('open')
+} 
+function hideChart3() {  
+    chart3.classList.remove('open')
+} 
+for( const openChart of openCharts3){
+    openChart.addEventListener('click',showChart)
+}
+chart3.addEventListener('click',hideChart3)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart3()
+    }
+});
+    </script>
+<!--SGDClassifier-->
+    <div class="chart chart4">
+        <img class="container" src="./chart/New Approach/1-1/LSTM_SGDClassifier.png" alt="">
+    </div>
+    <script>
+    const openCharts4= document.querySelectorAll('.js-show-chart4')
+    const chart4= document.querySelector('.chart4')
+    function showChart() {  
+    chart4.classList.add('open')
+    } 
+    function hideChart4() {  
+    chart4.classList.remove('open')
+    } 
+    for( const openChart of openCharts4){
+    openChart.addEventListener('click',showChart)
+    }
+    chart4.addEventListener('click',hideChart4)
+    document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart4()
+    }
+    });
+    </script>
+<!--BernoulliNB-->
+<div class="chart chart5">
+    <img class="container" src="./chart/New Approach/1-1/LSTM_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts5= document.querySelectorAll('.js-show-chart5')
+const chart5= document.querySelector('.chart5')
+function showChart() {  
+    chart5.classList.add('open')
+} 
+function hideChart5() {  
+    chart5.classList.remove('open')
+} 
+for( const openChart of openCharts5){
+    openChart.addEventListener('click',showChart)
+}
+chart5.addEventListener('click',hideChart5)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart5()
+    }
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart6">
+    <img class="container" src="./chart/New Approach/1-1/LSTM_PassiveAggressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts6= document.querySelectorAll('.js-show-chart6')
+const chart6= document.querySelector('.chart6')
+function showChart() {  
+    chart6.classList.add('open')
+} 
+function hideChart6() {  
+    chart6.classList.remove('open')
+} 
+for( const openChart of openCharts6){
+    openChart.addEventListener('click',showChart)
+}
+chart6.addEventListener('click',hideChart6)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart6()
+    }
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart7">
+<img class="container" src="./chart/New Approach/1-1/LSTM_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts7= document.querySelectorAll('.js-show-chart7')
+const chart7= document.querySelector('.chart7')
+function showChart() {  
+chart7.classList.add('open')
+} 
+function hideChart7() {  
+chart7.classList.remove('open')
+} 
+for( const openChart of openCharts7){
+openChart.addEventListener('click',showChart)
+}
+chart7.addEventListener('click',hideChart7)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart7()
+}
+});
+</script>
+
+<!--CNN-->
+<!--LSTM-->
+<div class="chart chart8">
+    <img class="container" src="./chart/New Approach/1-1/CNN_LSTM.png" alt="">
+</div>
+<script>
+const openCharts8= document.querySelectorAll('.js-show-chart8')
+const chart8= document.querySelector('.chart8')
+function showChart() {  
+    chart8.classList.add('open')
+} 
+function hideChart8() {  
+    chart8.classList.remove('open')
+} 
+for( const openChart of openCharts8){
+    openChart.addEventListener('click',showChart)
+}
+chart8.addEventListener('click',hideChart8)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart8()
+    }
+});
+</script>
+<!--CNN-->
+<div class="chart chart9">
+    <img class="container" src="./chart/New Approach/1-1/CNN_CNN.png" alt="">
+</div>
+<script>
+const openCharts9= document.querySelectorAll('.js-show-chart9')
+const chart9= document.querySelector('.chart9')
+function showChart() {  
+    chart9.classList.add('open')
+} 
+function hideChart9() {  
+    chart9.classList.remove('open')
+} 
+for( const openChart of openCharts9){
+    openChart.addEventListener('click',showChart)
+}
+chart9.addEventListener('click',hideChart9)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart9()
+    }
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart10">
+<img class="container" src="./chart/New Approach/1-1/CNN_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts10= document.querySelectorAll('.js-show-chart10')
+const chart10= document.querySelector('.chart10')
+function showChart() {  
+chart10.classList.add('open')
+} 
+function hideChart10() {  
+chart10.classList.remove('open')
+} 
+for( const openChart of openCharts10){
+openChart.addEventListener('click',showChart)
+}
+chart10.addEventListener('click',hideChart10)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart10()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart11">
+<img class="container" src="./chart/New Approach/1-1/CNN_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts11= document.querySelectorAll('.js-show-chart11')
+const chart11= document.querySelector('.chart11')
+function showChart() {  
+chart11.classList.add('open')
+} 
+function hideChart11() {  
+chart11.classList.remove('open')
+} 
+for( const openChart of openCharts11){
+openChart.addEventListener('click',showChart)
+}
+chart11.addEventListener('click',hideChart11)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart11()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart12">
+<img class="container" src="./chart/New Approach/1-1/CNN_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts12= document.querySelectorAll('.js-show-chart12')
+const chart12= document.querySelector('.chart12')
+function showChart() {  
+chart12.classList.add('open')
+} 
+function hideChart12() {  
+chart12.classList.remove('open')
+} 
+for( const openChart of openCharts12){
+openChart.addEventListener('click',showChart)
+}
+chart12.addEventListener('click',hideChart12)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart12()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart13">
+<img class="container" src="./chart/New Approach/1-1/CNN_PassiveAggressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts13= document.querySelectorAll('.js-show-chart13')
+const chart13= document.querySelector('.chart13')
+function showChart() {  
+chart13.classList.add('open')
+} 
+function hideChart13() {  
+chart13.classList.remove('open')
+} 
+for( const openChart of openCharts13){
+openChart.addEventListener('click',showChart)
+}
+chart13.addEventListener('click',hideChart13)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart13()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart14">
+<img class="container" src="./chart/New Approach/1-1/CNN_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts14= document.querySelectorAll('.js-show-chart14')
+const chart14= document.querySelector('.chart14')
+function showChart() {  
+chart14.classList.add('open')
+} 
+function hideChart14() {  
+chart14.classList.remove('open')
+} 
+for( const openChart of openCharts14){
+openChart.addEventListener('click',showChart)
+}
+chart14.addEventListener('click',hideChart14)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart14()
+}
+});
+</script>
+
+<!--Dòng 2-1-->
+<!--LSTM-->
+<!--LSTM-->
+<div class="chart chart15">
+    <img class="container" src="./chart/New Approach/2-1/LSTM_LSTM.png" alt="">
+</div>
+<script>
+const openCharts15= document.querySelectorAll('.js-show-chart15')
+const chart15= document.querySelector('.chart15')
+function showChart() {  
+    chart15.classList.add('open')
+} 
+function hideChart15() {  
+    chart15.classList.remove('open')
+} 
+for( const openChart of openCharts15){
+    openChart.addEventListener('click',showChart)
+}
+chart15.addEventListener('click',hideChart15)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart15()
+    }
+});
+</script>
+<!--CNN-->
+<div class="chart chart16">
+    <img class="container" src="./chart/New Approach/2-1/LSTM_CNN.png" alt="">
+</div>
+<script>
+const openCharts16= document.querySelectorAll('.js-show-chart16')
+const chart16= document.querySelector('.chart16')
+function showChart() {  
+    chart16.classList.add('open')
+} 
+function hideChart16() {  
+    chart16.classList.remove('open')
+} 
+for( const openChart of openCharts16){
+    openChart.addEventListener('click',showChart)
+}
+chart16.addEventListener('click',hideChart16)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart16()
+    }
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart17">
+<img class="container" src="./chart/New Approach/2-1/LSTM_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts17= document.querySelectorAll('.js-show-chart17')
+const chart17= document.querySelector('.chart17')
+function showChart() {  
+chart17.classList.add('open')
+} 
+function hideChart17() {  
+chart17.classList.remove('open')
+} 
+for( const openChart of openCharts17){
+openChart.addEventListener('click',showChart)
+}
+chart17.addEventListener('click',hideChart17)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart17()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart18">
+<img class="container" src="./chart/New Approach/2-1/LSTM_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts18= document.querySelectorAll('.js-show-chart18')
+const chart18= document.querySelector('.chart18')
+function showChart() {  
+chart18.classList.add('open')
+} 
+function hideChart18() {  
+chart18.classList.remove('open')
+} 
+for( const openChart of openCharts18){
+openChart.addEventListener('click',showChart)
+}
+chart18.addEventListener('click',hideChart18)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart18()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart19">
+<img class="container" src="./chart/New Approach/2-1/LSTM_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts19= document.querySelectorAll('.js-show-chart19')
+const chart19= document.querySelector('.chart19')
+function showChart() {  
+chart19.classList.add('open')
+} 
+function hideChart19() {  
+chart19.classList.remove('open')
+} 
+for( const openChart of openCharts19){
+openChart.addEventListener('click',showChart)
+}
+chart19.addEventListener('click',hideChart19)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart19()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart20">
+<img class="container" src="./chart/New Approach/2-1/LSTM_PassiveAggressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts20= document.querySelectorAll('.js-show-chart20')
+const chart20= document.querySelector('.chart20')
+function showChart() {  
+chart20.classList.add('open')
+} 
+function hideChart20() {  
+chart20.classList.remove('open')
+} 
+for( const openChart of openCharts20){
+openChart.addEventListener('click',showChart)
+}
+chart20.addEventListener('click',hideChart20)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart20()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart21">
+<img class="container" src="./chart/New Approach/2-1/LSTM_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts21= document.querySelectorAll('.js-show-chart21')
+const chart21= document.querySelector('.chart21')
+function showChart() {  
+chart21.classList.add('open')
+} 
+function hideChart21() {  
+chart21.classList.remove('open')
+} 
+for( const openChart of openCharts21){
+openChart.addEventListener('click',showChart)
+}
+chart21.addEventListener('click',hideChart21)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart21()
+}
+});
+</script>
+
+<!--CNN-->
+<!--LSTM-->
+<div class="chart chart22">
+<img class="container" src="./chart/New Approach/2-1/CNN_LSTM.png" alt="">
+</div>
+<script>
+const openCharts22= document.querySelectorAll('.js-show-chart22')
+const chart22= document.querySelector('.chart22')
+function showChart() {  
+chart22.classList.add('open')
+} 
+function hideChart22() {  
+chart22.classList.remove('open')
+} 
+for( const openChart of openCharts22){
+openChart.addEventListener('click',showChart)
+}
+chart22.addEventListener('click',hideChart22)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart22()
+}
+});
+</script>
+<!--CNN-->
+<div class="chart chart23">
+<img class="container" src="./chart/New Approach/2-1/CNN_CNN.png" alt="">
+</div>
+<script>
+const openCharts23= document.querySelectorAll('.js-show-chart23')
+const chart23= document.querySelector('.chart23')
+function showChart() {  
+chart23.classList.add('open')
+} 
+function hideChart23() {  
+chart23.classList.remove('open')
+} 
+for( const openChart of openCharts23){
+openChart.addEventListener('click',showChart)
+}
+chart23.addEventListener('click',hideChart23)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart23()
+}
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart24">
+<img class="container" src="./chart/New Approach/2-1/CNN_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts24= document.querySelectorAll('.js-show-chart24')
+const chart24= document.querySelector('.chart24')
+function showChart() {  
+chart24.classList.add('open')
+} 
+function hideChart24() {  
+chart24.classList.remove('open')
+} 
+for( const openChart of openCharts24){
+openChart.addEventListener('click',showChart)
+}
+chart24.addEventListener('click',hideChart24)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart24()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart25">
+<img class="container" src="./chart/New Approach/2-1/CNN_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts25= document.querySelectorAll('.js-show-chart25')
+const chart25= document.querySelector('.chart25')
+function showChart() {  
+chart25.classList.add('open')
+} 
+function hideChart25() {  
+chart25.classList.remove('open')
+} 
+for( const openChart of openCharts25){
+openChart.addEventListener('click',showChart)
+}
+chart25.addEventListener('click',hideChart25)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart25()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart26">
+<img class="container" src="./chart/New Approach/2-1/CNN_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts26= document.querySelectorAll('.js-show-chart26')
+const chart26= document.querySelector('.chart26')
+function showChart() {  
+chart26.classList.add('open')
+} 
+function hideChart26() {  
+chart26.classList.remove('open')
+} 
+for( const openChart of openCharts26){
+openChart.addEventListener('click',showChart)
+}
+chart26.addEventListener('click',hideChart26)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart26()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart27">
+<img class="container" src="./chart/New Approach/2-1/CNN_PassiveAggressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts27= document.querySelectorAll('.js-show-chart27')
+const chart27= document.querySelector('.chart27')
+function showChart() {  
+chart27.classList.add('open')
+} 
+function hideChart27() {  
+chart27.classList.remove('open')
+} 
+for( const openChart of openCharts27){
+openChart.addEventListener('click',showChart)
+}
+chart27.addEventListener('click',hideChart27)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart27()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart28">
+<img class="container" src="./chart/New Approach/2-1/CNN_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts28= document.querySelectorAll('.js-show-chart28')
+const chart28= document.querySelector('.chart28')
+function showChart() {  
+chart28.classList.add('open')
+} 
+function hideChart28() {  
+chart28.classList.remove('open')
+} 
+for( const openChart of openCharts28){
+openChart.addEventListener('click',showChart)
+}
+chart28.addEventListener('click',hideChart28)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart28()
+}
+});
+</script>
+
+<!--Dòng 5-1-->
+<!--LSTM-->
+<!--LSTM-->
+<div class="chart chart29">
+    <img class="container" src="./chart/New Approach/5-1/LSTM_LSTM.png" alt="">
+</div>
+<script>
+const openCharts29= document.querySelectorAll('.js-show-chart29')
+const chart29= document.querySelector('.chart29')
+function showChart() {  
+    chart29.classList.add('open')
+} 
+function hideChart29() {  
+    chart29.classList.remove('open')
+} 
+for( const openChart of openCharts29){
+    openChart.addEventListener('click',showChart)
+}
+chart29.addEventListener('click',hideChart29)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart29()
+    }
+});
+</script>
+<!--CNN-->
+<div class="chart chart30">
+    <img class="container" src="./chart/New Approach/5-1/LSTM_CNN.png" alt="">
+</div>
+<script>
+const openCharts30= document.querySelectorAll('.js-show-chart30')
+const chart30= document.querySelector('.chart30')
+function showChart() {  
+    chart30.classList.add('open')
+} 
+function hideChart30() {  
+    chart30.classList.remove('open')
+} 
+for( const openChart of openCharts30){
+    openChart.addEventListener('click',showChart)
+}
+chart30.addEventListener('click',hideChart30)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+    // Xử lý khi phím Esc được nhấn ở đây
+    hideChart30()
+    }
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart31">
+<img class="container" src="./chart/New Approach/5-1/LSTM_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts31= document.querySelectorAll('.js-show-chart31')
+const chart31= document.querySelector('.chart31')
+function showChart() {  
+chart31.classList.add('open')
+} 
+function hideChart31() {  
+chart31.classList.remove('open')
+} 
+for( const openChart of openCharts31){
+openChart.addEventListener('click',showChart)
+}
+chart31.addEventListener('click',hideChart31)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart31()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart32">
+<img class="container" src="./chart/New Approach/5-1/LSTM_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts32= document.querySelectorAll('.js-show-chart32')
+const chart32= document.querySelector('.chart32')
+function showChart() {  
+chart32.classList.add('open')
+} 
+function hideChart32() {  
+chart32.classList.remove('open')
+} 
+for( const openChart of openCharts32){
+openChart.addEventListener('click',showChart)
+}
+chart32.addEventListener('click',hideChart32)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart32()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart33">
+<img class="container" src="./chart/New Approach/33-1/LSTM_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts33= document.querySelectorAll('.js-show-chart33')
+const chart33= document.querySelector('.chart33')
+function showChart() {  
+chart33.classList.add('open')
+} 
+function hideChart33() {  
+chart33.classList.remove('open')
+} 
+for( const openChart of openCharts33){
+openChart.addEventListener('click',showChart)
+}
+chart33.addEventListener('click',hideChart33)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart33()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart34">
+<img class="container" src="./chart/New Approach/5-1/LSTM_PassiveAggressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts34= document.querySelectorAll('.js-show-chart34')
+const chart34= document.querySelector('.chart34')
+function showChart() {  
+chart34.classList.add('open')
+} 
+function hideChart34() {  
+chart34.classList.remove('open')
+} 
+for( const openChart of openCharts34){
+openChart.addEventListener('click',showChart)
+}
+chart34.addEventListener('click',hideChart34)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart34()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart35">
+<img class="container" src="./chart/New Approach/5-1/LSTM_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts35= document.querySelectorAll('.js-show-chart35')
+const chart35= document.querySelector('.chart35')
+function showChart() {  
+chart35.classList.add('open')
+} 
+function hideChart35() {  
+chart35.classList.remove('open')
+} 
+for( const openChart of openCharts35){
+openChart.addEventListener('click',showChart)
+}
+chart35.addEventListener('click',hideChart35)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart35()
+}
+});
+</script>
+
+<!--CNN-->
+<!--LSTM-->
+<div class="chart chart36">
+<img class="container" src="./chart/New Approach/5-1/CNN_LSTM.png" alt="">
+</div>
+<script>
+const openCharts36= document.querySelectorAll('.js-show-chart36')
+const chart36= document.querySelector('.chart36')
+function showChart() {  
+chart36.classList.add('open')
+} 
+function hideChart36() {  
+chart36.classList.remove('open')
+} 
+for( const openChart of openCharts36){
+openChart.addEventListener('click',showChart)
+}
+chart36.addEventListener('click',hideChart36)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart36()
+}
+});
+</script>
+<!--CNN-->
+<div class="chart chart37">
+<img class="container" src="./chart/New Approach/5-1/CNN_CNN.png" alt="">
+</div>
+<script>
+const openCharts37= document.querySelectorAll('.js-show-chart37')
+const chart37= document.querySelector('.chart37')
+function showChart() {  
+chart37.classList.add('open')
+} 
+function hideChart37() {  
+chart37.classList.remove('open')
+} 
+for( const openChart of openCharts37){
+openChart.addEventListener('click',showChart)
+}
+chart37.addEventListener('click',hideChart37)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart37()
+}
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart38">
+<img class="container" src="./chart/New Approach/5-1/CNN_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts38= document.querySelectorAll('.js-show-chart38')
+const chart38= document.querySelector('.chart38')
+function showChart() {  
+chart38.classList.add('open')
+} 
+function hideChart38() {  
+chart38.classList.remove('open')
+} 
+for( const openChart of openCharts38){
+openChart.addEventListener('click',showChart)
+}
+chart38.addEventListener('click',hideChart38)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart38()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart39">
+<img class="container" src="./chart/New Approach/5-1/CNN_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts39= document.querySelectorAll('.js-show-chart39')
+const chart39= document.querySelector('.chart39')
+function showChart() {  
+chart39.classList.add('open')
+} 
+function hideChart39() {  
+chart39.classList.remove('open')
+} 
+for( const openChart of openCharts39){
+openChart.addEventListener('click',showChart)
+}
+chart39.addEventListener('click',hideChart39)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart39()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart40">
+<img class="container" src="./chart/New Approach/5-1/CNN_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts40= document.querySelectorAll('.js-show-chart40')
+const chart40= document.querySelector('.chart40')
+function showChart() {  
+chart40.classList.add('open')
+} 
+function hideChart40() {  
+chart40.classList.remove('open')
+} 
+for( const openChart of openCharts40){
+openChart.addEventListener('click',showChart)
+}
+chart40.addEventListener('click',hideChart40)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart40()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart41">
+<img class="container" src="./chart/New Approach/5-1/CNN_PassiveAggressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts41= document.querySelectorAll('.js-show-chart41')
+const chart41= document.querySelector('.chart41')
+function showChart() {  
+chart41.classList.add('open')
+} 
+function hideChart41() {  
+chart41.classList.remove('open')
+} 
+for( const openChart of openCharts41){
+openChart.addEventListener('click',showChart)
+}
+chart41.addEventListener('click',hideChart41)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart41()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart42">
+<img class="container" src="./chart/New Approach/5-1/CNN_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts42= document.querySelectorAll('.js-show-chart42')
+const chart42= document.querySelector('.chart42')
+function showChart() {  
+chart42.classList.add('open')
+} 
+function hideChart42() {  
+chart42.classList.remove('open')
+} 
+for( const openChart of openCharts42){
+openChart.addEventListener('click',showChart)
+}
+chart42.addEventListener('click',hideChart42)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart42()
+}
+});
+</script>
+
+<!--Dòng 10-1-->
+<!--LSTM-->
+<!--LSTM-->
+<div class="chart chart43">
+<img class="container" src="./chart/New Approach/10-1/LSTM_LSTM.png" alt="">
+</div>
+<script>
+const openCharts43= document.querySelectorAll('.js-show-chart43')
+const chart43= document.querySelector('.chart43')
+function showChart() {  
+chart43.classList.add('open')
+} 
+function hideChart43() {  
+chart43.classList.remove('open')
+} 
+for( const openChart of openCharts43){
+openChart.addEventListener('click',showChart)
+}
+chart43.addEventListener('click',hideChart43)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart43()
+}
+});
+</script>
+<!--CNN-->
+<div class="chart chart44">
+<img class="container" src="./chart/New Approach/10-1/LSTM_CNN.png" alt="">
+</div>
+<script>
+const openCharts44= document.querySelectorAll('.js-show-chart44')
+const chart44= document.querySelector('.chart44')
+function showChart() {  
+chart44.classList.add('open')
+} 
+function hideChart44() {  
+chart44.classList.remove('open')
+} 
+for( const openChart of openCharts44){
+openChart.addEventListener('click',showChart)
+}
+chart44.addEventListener('click',hideChart44)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart44()
+}
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart45">
+<img class="container" src="./chart/New Approach/10-1/LSTM_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts45= document.querySelectorAll('.js-show-chart45')
+const chart45= document.querySelector('.chart45')
+function showChart() {  
+chart45.classList.add('open')
+} 
+function hideChart45() {  
+chart45.classList.remove('open')
+} 
+for( const openChart of openCharts45){
+openChart.addEventListener('click',showChart)
+}
+chart45.addEventListener('click',hideChart45)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart45()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart46">
+<img class="container" src="./chart/New Approach/10-1/LSTM_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts46= document.querySelectorAll('.js-show-chart46')
+const chart46= document.querySelector('.chart46')
+function showChart() {  
+chart46.classList.add('open')
+} 
+function hideChart46() {  
+chart46.classList.remove('open')
+} 
+for( const openChart of openCharts46){
+openChart.addEventListener('click',showChart)
+}
+chart46.addEventListener('click',hideChart46)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart46()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart47">
+<img class="container" src="./chart/New Approach/10-1/LSTM_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts47= document.querySelectorAll('.js-show-chart47')
+const chart47= document.querySelector('.chart47')
+function showChart() {  
+chart47.classList.add('open')
+} 
+function hideChart47() {  
+chart47.classList.remove('open')
+} 
+for( const openChart of openCharts47){
+openChart.addEventListener('click',showChart)
+}
+chart47.addEventListener('click',hideChart47)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart47()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart48">
+<img class="container" src="./chart/New Approach/10-1/LSTM_PassiveAgrressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts48= document.querySelectorAll('.js-show-chart48')
+const chart48= document.querySelector('.chart48')
+function showChart() {  
+chart48.classList.add('open')
+} 
+function hideChart48() {  
+chart48.classList.remove('open')
+} 
+for( const openChart of openCharts48){
+openChart.addEventListener('click',showChart)
+}
+chart48.addEventListener('click',hideChart48)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart48()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart49">
+<img class="container" src="./chart/New Approach/10-1/LSTM_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts49= document.querySelectorAll('.js-show-chart49')
+const chart49= document.querySelector('.chart49')
+function showChart() {  
+chart49.classList.add('open')
+} 
+function hideChart49() {  
+chart49.classList.remove('open')
+} 
+for( const openChart of openCharts49){
+openChart.addEventListener('click',showChart)
+}
+chart49.addEventListener('click',hideChart49)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart49()
+}
+});
+</script>
+
+<!--CNN-->
+<!--LSTM-->
+<div class="chart chart50">
+<img class="container" src="./chart/New Approach/10-1/CNN_LSTM.png" alt="">
+</div>
+<script>
+const openCharts50= document.querySelectorAll('.js-show-chart50')
+const chart50= document.querySelector('.chart50')
+function showChart() {  
+chart50.classList.add('open')
+} 
+function hideChart50() {  
+chart50.classList.remove('open')
+} 
+for( const openChart of openCharts50){
+openChart.addEventListener('click',showChart)
+}
+chart50.addEventListener('click',hideChart50)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart50()
+}
+});
+</script>
+<!--CNN-->
+<div class="chart chart51">
+<img class="container" src="./chart/New Approach/10-1/CNN_CNN.png" alt="">
+</div>
+<script>
+const openCharts51= document.querySelectorAll('.js-show-chart51')
+const chart51= document.querySelector('.chart51')
+function showChart() {  
+chart51.classList.add('open')
+} 
+function hideChart51() {  
+chart51.classList.remove('open')
+} 
+for( const openChart of openCharts51){
+openChart.addEventListener('click',showChart)
+}
+chart51.addEventListener('click',hideChart51)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart51()
+}
+});
+</script>
+<!--MultinomialNB-->
+<div class="chart chart52">
+<img class="container" src="./chart/New Approach/10-1/CNN_MultinomialNB.png" alt="">
+</div>
+<script>
+const openCharts52= document.querySelectorAll('.js-show-chart52')
+const chart52= document.querySelector('.chart52')
+function showChart() {  
+chart52.classList.add('open')
+} 
+function hideChart52() {  
+chart52.classList.remove('open')
+} 
+for( const openChart of openCharts52){
+openChart.addEventListener('click',showChart)
+}
+chart52.addEventListener('click',hideChart52)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart52()
+}
+});
+</script>
+<!--SGDClassifier-->
+<div class="chart chart53">
+<img class="container" src="./chart/New Approach/10-1/CNN_SGDClassifier.png" alt="">
+</div>
+<script>
+const openCharts53= document.querySelectorAll('.js-show-chart53')
+const chart53= document.querySelector('.chart53')
+function showChart() {  
+chart53.classList.add('open')
+} 
+function hideChart53() {  
+chart53.classList.remove('open')
+} 
+for( const openChart of openCharts53){
+openChart.addEventListener('click',showChart)
+}
+chart53.addEventListener('click',hideChart53)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart53()
+}
+});
+</script>
+<!--BernoulliNB-->
+<div class="chart chart54">
+<img class="container" src="./chart/New Approach/10-1/CNN_BernoulliNB.png" alt="">
+</div>
+<script>
+const openCharts54= document.querySelectorAll('.js-show-chart54')
+const chart54= document.querySelector('.chart54')
+function showChart() {  
+chart54.classList.add('open')
+} 
+function hideChart54() {  
+chart54.classList.remove('open')
+} 
+for( const openChart of openCharts54){
+openChart.addEventListener('click',showChart)
+}
+chart54.addEventListener('click',hideChart54)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart54()
+}
+});
+</script>
+<!--PassiveAggressiveClassifier-->
+<div class="chart chart55">
+<img class="container" src="./chart/New Approach/10-1/CNN_PassiveAgrressiveClassifier.png" alt="">
+</div>
+<script>
+const openCharts55= document.querySelectorAll('.js-show-chart55')
+const chart55= document.querySelector('.chart55')
+function showChart() {  
+chart55.classList.add('open')
+} 
+function hideChart55() {  
+chart55.classList.remove('open')
+} 
+for( const openChart of openCharts55){
+openChart.addEventListener('click',showChart)
+}
+chart55.addEventListener('click',hideChart55)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart55()
+}
+});
+</script>
+<!--XGBoost-->
+<div class="chart chart56">
+<img class="container" src="./chart/New Approach/10-1/CNN_XGBoost.png" alt="">
+</div>
+<script>
+const openCharts56= document.querySelectorAll('.js-show-chart56')
+const chart56= document.querySelector('.chart56')
+function showChart() {  
+chart56.classList.add('open')
+} 
+function hideChart56() {  
+chart56.classList.remove('open')
+} 
+for( const openChart of openCharts56){
+openChart.addEventListener('click',showChart)
+}
+chart56.addEventListener('click',hideChart56)
+document.addEventListener('keydown', function(event) {
+if (event.key === "Escape") {
+// Xử lý khi phím Esc được nhấn ở đây
+hideChart56()
+}
+});
+</script>
+
+</body>
+</html>
