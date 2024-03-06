@@ -8,13 +8,14 @@
     <title>New Approach Transfer</title>
 </head>
 <body>
-    <header>KẾT QUẢ THỰC NGHIỆM</header>
-    <d>Mô tả chi tiết</d>
+    <header>EXPERIMENTAL RESULTS</header>
     <br>
-    <button><a href="./index.html">1st Approach</a></button>
-    <button><a href="./ProposedCNNArchitecture.html">Proposed 1st Approach</a></button>
-    <button><a href="./NewApproach.html">2nd Approach</a></button>
-    <button><a href="./NewApproach_Transfer.html">Proposed 2st Approach</a></button>
+    <div class="option">
+        <button><a href="./index.html">1<sup>st</sup> Approach</a></button>
+        <button><a href="./Propose_1st_Approach.html">Proposed 1<sup>st</sup> Approach</a></button>
+        <button><a href="./2nd_Approach.html">2<sup>nd</sup> Approach</a></button>
+        <button class="choosen" disabled><a>Proposed 2<sup>nd</sup> Approach</a></button>
+    </div>
     <table>
         <thead>
         <tr>
@@ -55,58 +56,58 @@
         </tr>
         <tr>
             <td>LSTM</td>
-            <td>82%</td>
-            <td>0.82</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.88</td>
-            <td>0.93</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.91</td>
-            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.90</td>
+            <td>83%</td>
+            <td>0.83</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.89</td>
+            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td>
+            <td>0.90</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.68</td>
             <td> <a class="js-show-chart1"> <i class="fa fa-bar-chart"></i> </a> </td>
         </tr>
         <tr>
             <td>CNN</td>
-            <td>55%</td>
-            <td>0.91</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.85</td> 
-            <td>0.56</td> <td>0.00</td> <td>0.42</td> <td>0.00</td> <td>0.85</td>
-            <td>0.70</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.85</td>
+            <td>52%</td>
+            <td>0.78</td> <td>0.08</td> <td>0.08</td> <td>0.00</td> <td>0.42</td> 
+            <td>0.60</td> <td>0.04</td> <td>0.50</td> <td>0.00</td> <td>0.20</td>
+            <td>0.68</td> <td>0.05</td> <td>0.14</td> <td>0.00</td> <td>0.27</td>
             <td><a class="js-show-chart2"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>MultinomialNB</td>
             <td>78%</td>
-            <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-            <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
-            <td>0.88</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.42</td>
+            <td>0.78</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.93</td> 
+            <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
+            <td>0.87</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.22</td>
             <td><a class="js-show-chart3"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>SGDClassifier</td>
-            <td>81%</td>
-            <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
-            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.53</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+            <td>0.87</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.00</td>
             <td><a class="js-show-chart4"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>BernoulliNB</td>
-            <td>81%</td>
-            <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
-            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.53</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>1.00</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+            <td>0.87</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.00</td>
             <td><a class="js-show-chart5"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>PassiveAggressiveClassifier</td>
-            <td>81%</td>
-            <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.34</td>
-            <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.50</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+            <td>0.87</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.01</td>
             <td><a class="js-show-chart6"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>XGBoost</td>
-            <td>82%</td>
-            <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
-            <td>0.90</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.58</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+            <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
             <td><a class="js-show-chart7"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
     <!--CNN-->
@@ -115,58 +116,58 @@
         </tr>
         <tr>
             <td>LSTM</td>
-            <td>80%</td>
-            <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
-            <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td>
-            <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
             <td> <a class="js-show-chart8"> <i class="fa fa-bar-chart"></i> </a> </td>
         </tr>
         <tr>
             <td>CNN</td>
-            <td>41%</td>
-            <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-            <td>0.39</td> <td>0.00</td> <td>0.57</td> <td>0.00</td> <td>0.80</td>
-            <td>0.52</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.84</td>
+            <td>58%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.86</td> 
+            <td>0.72</td> <td>0.00</td> <td>0.33</td> <td>0.00</td> <td>0.04</td>
+            <td>0.75</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.07</td>
             <td><a class="js-show-chart9"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>MultinomialNB</td>
-            <td>84%</td>
-            <td>0.85</td> <td>0.10</td> <td>0.11</td> <td>0.00</td> <td>0.89</td> 
-            <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td>
-            <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
+            <td>77%</td>
+            <td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.97</td> 
+            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
             <td><a class="js-show-chart10"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>SGDClassifier</td>
-            <td>86%</td>
-            <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td>
-            <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
             <td><a class="js-show-chart11"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>BernoulliNB</td>
-            <td>68%</td>
-            <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td> 
-            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
-            <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+            <td>77%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
             <td><a class="js-show-chart12"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>PassiveAggressiveClassifier</td>
-            <td>86%</td>
-            <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
-            <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+            <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
             <td><a class="js-show-chart13"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
         <tr>
             <td>XGBoost</td>
-            <td>85%</td>
-            <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
-            <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td>
-            <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
+            <td>78%</td>
+            <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.97</td> 
+            <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+            <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
             <td><a class="js-show-chart14"><i class="fa fa-bar-chart"></i></a></td>
         </tr>
 
@@ -178,58 +179,58 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>85%</td>
-        <td>0.86</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.88</td>
-        <td>0.98</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.88</td>
-        <td>0.92</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.88</td>
+        <td>79%</td>
+        <td>0.84</td> <td>0.01</td> <td>0.05</td> <td>0.00</td> <td>0.90</td>
+        <td>0.93</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.69</td>
+        <td>0.88</td> <td>0.01</td> <td>0.01</td> <td>0.00</td> <td>0.78</td>
         <td> <a class="js-show-chart15"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>41%</td>
-        <td>0.91</td> <td>0.07</td> <td>0.05</td> <td>0.00</td> <td>0.90</td> 
-        <td>0.41</td> <td>0.00</td> <td>0.60</td> <td>0.00</td> <td>0.57</td>
-        <td>0.57</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.70</td>
+        <td>60%</td>
+        <td>0.91</td> <td>0.04</td> <td>0.07</td> <td>0.09</td> <td>0.88</td> 
+        <td>0.63</td> <td>0.00</td> <td>0.52</td> <td>0.30</td> <td>0.76</td>
+        <td>0.73</td> <td>0.00</td> <td>0.13</td> <td>0.14</td> <td>0.82</td>
         <td><a class="js-show-chart16"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>81%</td>
-        <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
-        <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.61</td>
+        <td>69%</td>
+        <td>0.78</td> <td>0.01</td> <td>0.06</td> <td>0.00</td> <td>0.85</td> 
+        <td>0.88</td> <td>0.01</td> <td>0.10</td> <td>0.00</td> <td>0.03</td>
+        <td>0.82</td> <td>0.01</td> <td>0.08</td> <td>0.00</td> <td>0.07</td>
         <td><a class="js-show-chart17"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>83%</td>
-        <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
-        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.70</td>
+        <td>82%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.92</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
+        <td>0.90</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.58</td>
         <td><a class="js-show-chart18"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>BernoulliNB</td>
         <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart19"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>PassiveAggressiveClassifier</td>
-        <td>80%</td>
-        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td>
-        <td>0.89</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.46</td>
+        <td>77%</td>
+        <td>0.79</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.88</td> 
+        <td>0.95</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.26</td>
+        <td>0.87</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.40</td>
         <td><a class="js-show-chart20"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>84%</td>
-        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td>
-        <td>0.91</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.75</td>
+        <td>76%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.88</td> 
+        <td>0.95</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.26</td>
+        <td>0.87</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.40</td>
         <td><a class="js-show-chart21"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 <!--CNN-->
@@ -238,58 +239,58 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>83%</td>
-        <td>0.83</td> <td>0.00</td> <td>0.14</td> <td>0.00</td> <td>0.88</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.56</td>
-        <td>0.90</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.69</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
         <td> <a class="js-show-chart22"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>50%</td>
-        <td>0.80</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.93</td> 
-        <td>0.56</td> <td>0.00</td> <td>0.49</td> <td>0.00</td> <td>0.39</td>
-        <td>0.66</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.55</td>
+        <td>45%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.45</td> 
+        <td>0.54</td> <td>0.00</td> <td>0.37</td> <td>0.00</td> <td>0.12</td>
+        <td>0.65</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.20</td>
         <td><a class="js-show-chart23"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>82%</td>
-        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
-        <td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td>
-        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
+        <td>71%</td>
+        <td>0.77</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.84</td> 
+        <td>0.90</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.01</td>
+        <td>0.83</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.01</td>
         <td><a class="js-show-chart24"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>85%</td>
-        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td>
-        <td>0.92</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.83</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.67</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart25"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>BernoulliNB</td>
-        <td>81%</td>
-        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
-        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
-        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
+        <td>77%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart26"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>PassiveAggressiveClassifier</td>
-        <td>86%</td>
-        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td>
-        <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart27"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>85%</td>
-        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td>
-        <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td>
+        <td>80%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.84</td> 
+        <td>0.98</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.38</td>
+        <td>0.89</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.52</td>
         <td><a class="js-show-chart28"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <!-- Step 5-1 -->
@@ -300,58 +301,58 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>80%</td>
-        <td>0.81</td> <td>0.04</td> <td>0.06</td> <td>0.00</td> <td>0.86</td>
-        <td>0.98</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.40</td>
-        <td>0.89</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.54</td>
+        <td>76%</td>
+        <td>0.80</td> <td>0.01</td> <td>0.13</td> <td>0.00</td> <td>0.91</td>
+        <td>0.94</td> <td>0.01</td> <td>0.01</td> <td>0.00</td> <td>0.30</td>
+        <td>0.87</td> <td>0.01</td> <td>0.02</td> <td>0.00</td> <td>0.45</td>
         <td> <a class="js-show-chart29"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>40%</td>
-        <td>0.82</td> <td>0.11</td> <td>0.06</td> <td>0.00</td> <td>0.91</td> 
-        <td>0.47</td> <td>0.00</td> <td>0.64</td> <td>0.00</td> <td>0.09</td>
-        <td>0.59</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.16</td>
+        <td>65%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.86</td> 
+        <td>0.77</td> <td>0.00</td> <td>0.47</td> <td>0.00</td> <td>0.32</td>
+        <td>0.78</td> <td>0.00</td> <td>0.17</td> <td>0.00</td> <td>0.46</td>
         <td><a class="js-show-chart30"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.02</td> <td>0.50</td> <td>0.00</td> <td>0.93</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
+        <td>0.89</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
         <td><a class="js-show-chart31"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
         <td><a class="js-show-chart32"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>BernoulliNB</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>77%</td>
+        <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td> 
+        <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.19</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
         <td><a class="js-show-chart33"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>PassiveAggressiveClassifier</td>
         <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart34"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
         <td>81%</td>
-        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.85</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
-        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
+        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
         <td><a class="js-show-chart35"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 <!--CNN-->
@@ -361,33 +362,33 @@
     <tr>
         <td>LSTM</td>
         <td>82%</td>
-        <td>0.83</td> <td>0.00</td> <td>0.14</td> <td>0.00</td> <td>0.88</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.56</td>
-        <td>0.90</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.69</td>
+        <td>0.82</td> <td>0.00</td> <td>0.14</td> <td>0.00</td> <td>0.87</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.43</td>
+        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.57</td>
         <td> <a class="js-show-chart36"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>52%</td>
-        <td>0.80</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.93</td> 
-        <td>0.56</td> <td>0.00</td> <td>0.49</td> <td>0.00</td> <td>0.39</td>
-        <td>0.66</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.55</td>
+        <td>45%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.88</td> 
+        <td>0.49</td> <td>0.00</td> <td>0.52</td> <td>0.00</td> <td>0.41</td>
+        <td>0.61</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.56</td>
         <td><a class="js-show-chart37"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
         <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
         <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart38"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>82%</td>
-        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
-        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td>
+        <td>80%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td>
         <td><a class="js-show-chart39"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
@@ -408,10 +409,10 @@
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>79%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.48</td>
         <td><a class="js-show-chart42"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 
@@ -423,58 +424,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>74%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> <td>0.40</td> 
-    <td>0.89</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.63</td>
-    <td>0.85</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.49</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
     <td> <a class="js-show-chart43"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>61%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.08</td> <td>0.14</td> <td>0.89</td> 
-    <td>0.68</td> <td>0.00</td> <td>0.46</td> <td>0.30</td> <td>0.52</td>
-    <td>0.74</td> <td>0.00</td> <td>0.14</td> <td>0.19</td> <td>0.65</td>
+    <td>58%</td>
+    <td>0.83</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.89</td> 
+    <td>0.67</td> <td>0.00</td> <td>0.38</td> <td>0.00</td> <td>0.41</td>
+    <td>0.74</td> <td>0.00</td> <td>0.10</td> <td>0.19</td> <td>0.56</td>
     <td><a class="js-show-chart44"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>80%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+    <td>76%</td>
+    <td>0.87</td> <td>0.02</td> <td>0.11</td> <td>0.00</td> <td>0.86</td> 
+    <td>0.97</td> <td>0.01</td> <td>0.01</td> <td>0.00</td> <td>0.07</td>
+    <td>0.87</td> <td>0.01</td> <td>0.01</td> <td>0.00</td> <td>0.12</td>
     <td><a class="js-show-chart45"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>80%</td>
-    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.24</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.97</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
     <td><a class="js-show-chart46"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
     <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td> 
     <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart47"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>82%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
+    <td>79%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.11</td>
     <td><a class="js-show-chart48"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
     <td>81%</td>
-    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.43</td>
+    <td>0.81</td> <td>0.02</td> <td>0.19</td> <td>0.00</td> <td>0.88</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.36</td>
+    <td>0.89</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.51</td>
     <td><a class="js-show-chart49"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -483,58 +484,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>81%</td>
-    <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.72</td> 
-    <td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td> <a class="js-show-chart50"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>25%</td>
-    <td>0.90</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.21</td> <td>0.00</td> <td>0.74</td> <td>0.00</td> <td>0.48</td>
-    <td>0.34</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.60</td>
+    <td>44%</td>
+    <td>0.85</td> <td>0.02</td> <td>0.05</td> <td>0.00</td> <td>0.00</td> 
+    <td>0.52</td> <td>0.01</td> <td>0.53</td> <td>0.00</td> <td>0.00</td>
+    <td>0.65</td> <td>0.01</td> <td>0.10</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart51"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+    <td>76%</td>
+    <td>0.78</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>0.98</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.87</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart52"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart53"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>80%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td> 
-    <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.36</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart54"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart55"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>82%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.63</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart56"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -546,58 +547,58 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>85%</td>
-        <td>0.86</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.88</td>
-        <td>0.93</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.87</td>
-        <td>0.91</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.88</td>
+        <td>79%</td>
+        <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td>
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+        <td>0.88</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.30</td>
         <td> <a class="js-show-chart57"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>57%</td>
-        <td>0.90</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.89</td> 
-        <td>0.63</td> <td>0.00</td> <td>0.43</td> <td>0.00</td> <td>0.61</td>
-        <td>0.74</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.72</td>
+        <td>46%</td>
+        <td>0.89</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.87</td> 
+        <td>0.53</td> <td>0.00</td> <td>0.41</td> <td>0.00</td> <td>0.34</td>
+        <td>0.66</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.48</td>
         <td><a class="js-show-chart58"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>81%</td>
-        <td>0.82</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
-        <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
-        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.65</td>
+        <td>76%</td>
+        <td>0.79</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>0.95</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
+        <td>0.86</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
         <td><a class="js-show-chart59"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>84%</td>
-        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.67</td>
-        <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td>
+        <td>79%</td>
+        <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.23</td>
         <td><a class="js-show-chart60"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>BernoulliNB</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>76%</td>
+        <td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td> 
+        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart61"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>PassiveAggressiveClassifier</td>
-        <td>84%</td>
-        <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.67</td>
-        <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.15</td>
         <td><a class="js-show-chart62"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>81%</td>
-        <td>0.81</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.91</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
-        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.51</td>
+        <td>82%</td>
+        <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.85</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.43</td>
+        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.58</td>
         <td><a class="js-show-chart63"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 <!--CNN-->
@@ -606,58 +607,58 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>84%</td>
-        <td>0.86</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.87</td> 
-        <td>0.97</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.85</td>
-        <td>0.90</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.86</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.89</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+        <td>0.89</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.49</td>
         <td> <a class="js-show-chart64"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>66%</td>
-        <td>0.89</td> <td>0.01</td> <td>0.06</td> <td>0.00</td> <td>0.88</td> 
-        <td>0.79</td> <td>0.00</td> <td>0.31</td> <td>0.00</td> <td>0.81</td>
-        <td>0.80</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.85</td>
+        <td>63%</td>
+        <td>0.88</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.90</td> 
+        <td>0.71</td> <td>0.00</td> <td>0.41</td> <td>0.00</td> <td>0.55</td>
+        <td>0.79</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.68</td>
         <td><a class="js-show-chart65"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>78%</td>
-        <td>0.81</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
-        <td>0.94</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
-        <td>0.87</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.60</td>
+        <td>76%</td>
+        <td>0.77</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart66"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>83%</td>
-        <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
-        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td>
+        <td>80%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
         <td><a class="js-show-chart67"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>BernoulliNB</td>
-        <td>74%</td>
-        <td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td> 
-        <td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>77%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart68"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>PassiveAggressiveClassifier</td>
-        <td>86%</td>
-        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td>
-        <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td>
+        <td>78%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
         <td><a class="js-show-chart69"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>82%</td>
-        <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
-        <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.60</td>
+        <td>81%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
         <td><a class="js-show-chart70"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 
@@ -669,58 +670,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>85%</td>
-    <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td>
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td>
-    <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td>
+    <td>81%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td>
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
     <td> <a class="js-show-chart71"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>35%</td>
-    <td>0.90</td> <td>0.07</td> <td>0.05</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.38</td> <td>0.00</td> <td>0.72</td> <td>0.00</td> <td>0.17</td>
-    <td>0.53</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.28</td>
+    <td>67%</td>
+    <td>0.89</td> <td>0.01</td> <td>0.09</td> <td>0.00</td> <td>0.83</td> 
+    <td>0.78</td> <td>0.01</td> <td>0.36</td> <td>0.00</td> <td>0.45</td>
+    <td>0.81</td> <td>0.01</td> <td>0.14</td> <td>0.00</td> <td>0.58</td>
     <td><a class="js-show-chart72"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>79%</td>
-    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.22</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+    <td>84%</td>
+    <td>0.85</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td>
+    <td>0.91</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
     <td><a class="js-show-chart73"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>81%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
+    <td>85%</td>
+    <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td>
+    <td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td>
     <td><a class="js-show-chart74"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
     <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.62</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
     <td><a class="js-show-chart75"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
     <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
     <td><a class="js-show-chart76"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
     <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.85</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.60</td>
     <td><a class="js-show-chart77"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -729,58 +730,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.51</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.62</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.94</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
     <td> <a class="js-show-chart78"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>45%</td>
-    <td>0.74</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.87</td> 
-    <td>0.50</td> <td>0.00</td> <td>0.48</td> <td>0.00</td> <td>0.36</td>
-    <td>0.60</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.51</td>
+    <td>51%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.07</td> <td>0.01</td> <td>0.92</td> 
+    <td>0.62</td> <td>0.00</td> <td>0.56</td> <td>0.00</td> <td>0.18</td>
+    <td>0.70</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> <td>0.30</td>
     <td><a class="js-show-chart79"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>79%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
-    <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.52</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.94</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
     <td><a class="js-show-chart80"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.94</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
     <td><a class="js-show-chart81"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>77%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.22</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart82"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>81%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.48</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.94</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
     <td><a class="js-show-chart83"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.58</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.94</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
     <td><a class="js-show-chart84"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!-- Step 5-2 -->
@@ -791,58 +792,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>83%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td>
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.63</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.92</td>
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.23</td>
     <td> <a class="js-show-chart85"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>52%</td>
-    <td>0.89</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.89</td> 
-    <td>0.52</td> <td>0.00</td> <td>0.52</td> <td>0.00</td> <td>0.82</td>
-    <td>0.66</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.85</td>
+    <td>63%</td>
+    <td>0.83</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.86</td> 
+    <td>0.76</td> <td>0.00</td> <td>0.27</td> <td>0.00</td> <td>0.30</td>
+    <td>0.79</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.45</td>
     <td><a class="js-show-chart86"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>80%</td>
-    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.92</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+    <td>72%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.93</td> 
+    <td>0.92</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.06</td>
+    <td>0.84</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.12</td>
     <td><a class="js-show-chart87"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.95</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
     <td><a class="js-show-chart88"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>78%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>76%</td>
+    <td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart89"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>81%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.32</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.48</td>
+    <td>77%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.47</td> 
+    <td>0.96</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.29</td>
+    <td>0.87</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.36</td>
     <td><a class="js-show-chart90"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>82%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.85</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.92</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
     <td><a class="js-show-chart91"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -851,58 +852,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>1.00</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.47</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td>
     <td> <a class="js-show-chart92"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>47%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.86</td> 
-    <td>0.51</td> <td>0.00</td> <td>0.49</td> <td>0.00</td> <td>0.40</td>
-    <td>0.63</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.53</td>
+    <td>58%</td>
+    <td>0.85</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.83</td> 
+    <td>0.69</td> <td>0.00</td> <td>0.48</td> <td>0.00</td> <td>0.25</td>
+    <td>0.76</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> <td>0.39</td>
     <td><a class="js-show-chart93"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.92</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.28</td>
     <td><a class="js-show-chart94"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.90</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
     <td><a class="js-show-chart95"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
     <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
     <td><a class="js-show-chart96"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.92</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
     <td><a class="js-show-chart97"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
     <td>81%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
     <td><a class="js-show-chart98"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -914,34 +915,34 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>85%</td>
-<td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td>
-<td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
+<td>80%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.15</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
 <td> <a class="js-show-chart43"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>56%</td>
-<td>0.85</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.84</td> 
-<td>0.59</td> <td>0.00</td> <td>0.47</td> <td>0.00</td> <td>0.76</td>
-<td>0.70</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.80</td>
+<td>58%</td>
+<td>0.82</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.81</td> 
+<td>0.71</td> <td>0.00</td> <td>0.25</td> <td>0.00</td> <td>0.13</td>
+<td>0.76</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.23</td>
 <td><a class="js-show-chart100"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
 <td>78%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.96</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
+<td>0.78</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.98</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
 <td><a class="js-show-chart101"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
-<td>79%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.91</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
+<td>78%</td>
+<td>0.79</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.33</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
 <td><a class="js-show-chart102"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
@@ -954,18 +955,18 @@
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
-<td>84%</td>
-<td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.86</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td>
-<td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.85</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
 <td><a class="js-show-chart104"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>81%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.32</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
 <td><a class="js-show-chart105"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -974,58 +975,58 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>72%</td>
-<td>0.78</td> <td>0.00</td> <td>0.16</td> <td>0.00</td> <td>0.16</td> 
-<td>0.90</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.14</td>
-<td>0.84</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.15</td>
+<td>81%</td>
+<td>0.81</td> <td>0.00</td> <td>0.16</td> <td>0.00</td> <td>0.81</td> 
+<td>0.99</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.34</td>
+<td>0.48</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.48</td>
 <td> <a class="js-show-chart106"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>20%</td>
-<td>0.72</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.00</td> 
-<td>0.20</td> <td>0.00</td> <td>0.85</td> <td>0.00</td> <td>0.00</td>
-<td>0.31</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.00</td>
+<td>54%</td>
+<td>0.78</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.00</td> 
+<td>0.67</td> <td>0.00</td> <td>0.36</td> <td>0.00</td> <td>0.00</td>
+<td>0.72</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart107"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>75%</td>
-<td>0.77</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>0.95</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>77%</td>
+<td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart108"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
-<td>75%</td>
-<td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.88</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
 <td><a class="js-show-chart109"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
-<td>76%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td> 
-<td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.45</td>
-<td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
+<td>73%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> 
+<td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.75</td> <td>0.00</td>
+<td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.20</td> <td>0.00</td>
 <td><a class="js-show-chart110"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
-<td>72%</td>
-<td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td> 
-<td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
-<td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>1.00</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart111"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>76%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
 <td><a class="js-show-chart112"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -1037,34 +1038,34 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>81%</td>
-        <td>0.81</td> <td>0.00</td> <td>0.15</td> <td>0.00</td> <td>0.81</td>
-        <td>0.99</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.37</td>
-        <td>0.89</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.51</td>
+        <td>80%</td>
+        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td>
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
         <td> <a class="js-show-chart113"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>50%</td>
-        <td>0.90</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.83</td> 
-        <td>0.59</td> <td>0.00</td> <td>0.61</td> <td>0.00</td> <td>0.09</td>
-        <td>0.71</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.16</td>
+        <td>57%</td>
+        <td>0.83</td> <td>0.02</td> <td>0.06</td> <td>0.00</td> <td>0.84</td> 
+        <td>0.61</td> <td>0.00</td> <td>0.39</td> <td>0.00</td> <td>0.77</td>
+        <td>0.70</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.81</td>
         <td><a class="js-show-chart114"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>75%</td>
-        <td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>78%</td>
+        <td>0.80</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
+        <td>0.96</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.26</td>
+        <td>0.87</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
         <td><a class="js-show-chart115"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>83%</td>
+        <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
+        <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.65</td>
         <td><a class="js-show-chart116"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
@@ -1078,17 +1079,17 @@
     <tr>
         <td>PassiveAggressiveClassifier</td>
         <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.89</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
         <td><a class="js-show-chart118"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>78%</td>
-        <td>0.80</td> <td>0.00</td> <td>0.17</td> <td>0.00</td> <td>0.80</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.51</td>
         <td><a class="js-show-chart119"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 <!--CNN-->
@@ -1097,58 +1098,58 @@
     </tr>
     <tr>
         <td>LSTM</td>
-        <td>80%</td>
-        <td>0.80</td> <td>0.00</td> <td>0.17</td> <td>0.00</td> <td>0.81</td> 
-        <td>0.99</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.25</td>
-        <td>0.89</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.38</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
         <td> <a class="js-show-chart120"> <i class="fa fa-bar-chart"></i> </a> </td>
     </tr>
     <tr>
         <td>CNN</td>
-        <td>25%</td>
-        <td>0.75</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.84</td> 
-        <td>0.26</td> <td>0.00</td> <td>0.80</td> <td>0.00</td> <td>0.11</td>
-        <td>0.38</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.19</td>
+        <td>36%</td>
+        <td>0.81</td> <td>0.10</td> <td>0.05</td> <td>0.00</td> <td>0.85</td> 
+        <td>0.41</td> <td>0.00</td> <td>0.56</td> <td>0.00</td> <td>0.17</td>
+        <td>0.54</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.28</td>
         <td><a class="js-show-chart121"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>MultinomialNB</td>
-        <td>76%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
-        <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
-        <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
+        <td>79%</td>
+        <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
+        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.32</td>
         <td><a class="js-show-chart122"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>SGDClassifier</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.15</td>
+        <td>81%</td>
+        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
+        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
         <td><a class="js-show-chart123"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>BernoulliNB</td>
         <td>77%</td>
         <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
         <td><a class="js-show-chart124"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>PassiveAggressiveClassifier</td>
-        <td>78%</td>
-        <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-        <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
         <td><a class="js-show-chart125"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
     <tr>
         <td>XGBoost</td>
-        <td>80%</td>
-        <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-        <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.21</td>
-        <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+        <td>81%</td>
+        <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
+        <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+        <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.48</td>
         <td><a class="js-show-chart126"><i class="fa fa-bar-chart"></i></a></td>
     </tr>
 
@@ -1161,57 +1162,57 @@
 <tr>
     <td>LSTM</td>
     <td>81%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.52</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td>
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.45</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.57</td>
     <td> <a class="js-show-chart127"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>41%</td>
-    <td>0.74</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.83</td> 
-    <td>0.47</td> <td>0.00</td> <td>0.52</td> <td>0.00</td> <td>0.18</td>
-    <td>0.57</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.29</td>
+    <td>62%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.82</td> 
+    <td>0.75</td> <td>0.00</td> <td>0.36</td> <td>0.00</td> <td>0.17</td>
+    <td>0.78</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> <td>0.28</td>
     <td><a class="js-show-chart128"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>75%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
-    <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
+    <td>78%</td>
+    <td>0.81</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
+    <td>0.95</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+    <td>0.87</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.51</td>
     <td><a class="js-show-chart129"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>1.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>81%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.22</td> <td>0.00</td> <td>0.82</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
     <td><a class="js-show-chart130"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>77%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-     <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>74%</td>
+    <td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td> 
+    <td>0.94</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
+    <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
     <td><a class="js-show-chart131"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>79%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.24</td>
+    <td>81%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.48</td>
     <td><a class="js-show-chart132"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>81%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.36</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
+    <td>82%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.80</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.43</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
     <td><a class="js-show-chart133"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1220,58 +1221,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>75%</td>
-    <td>0.80</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.90</td> <td>0.00</td> <td>0.13</td> <td>0.00</td> <td>0.35</td>
-    <td>0.85</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.48</td>
+    <td>81%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
     <td> <a class="js-show-chart134"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>32%</td>
-    <td>0.72</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.82</td> 
-    <td>0.38</td> <td>0.00</td> <td>0.50</td> <td>0.00</td> <td>0.01</td>
-    <td>0.50</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.01</td>
+    <td>36%</td>
+    <td>0.75</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.78</td> 
+    <td>0.41</td> <td>0.00</td> <td>0.46</td> <td>0.00</td> <td>0.21</td>
+    <td>0.53</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.34</td>
     <td><a class="js-show-chart135"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>77%</td>
-    <td>0.78</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.71</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
-    <td>0.87</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
     <td><a class="js-show-chart136"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.28</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td>
     <td><a class="js-show-chart137"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
     <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.71</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.11</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart138"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.22</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.35</td>
     <td><a class="js-show-chart139"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
+    <td>81%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.52</td>
     <td><a class="js-show-chart140"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!-- Step 5-5 -->
@@ -1282,58 +1283,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>84%</td>
-    <td>0.86</td> <td>0.04</td> <td>0.19</td> <td>0.00</td> <td>0.78</td>
-    <td>0.97</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.72</td>
-    <td>0.91</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.80</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td>
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.23</td>
     <td> <a class="js-show-chart141"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>41%</td>
-    <td>0.88</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.41</td> <td>0.00</td> <td>0.56</td> <td>0.00</td> <td>0.65</td>
-    <td>0.56</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.72</td>
+    <td>73%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.85</td> 
+    <td>0.89</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.36</td>
+    <td>0.85</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.51</td>
     <td><a class="js-show-chart142"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>78%</td>
-    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.84</td> 
-    <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td>
-    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.45</td>
+    <td>77%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
     <td><a class="js-show-chart143"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>82%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.62</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
     <td><a class="js-show-chart144"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
     <td>78%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td> 
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>1.00</td> 
     <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
     <td><a class="js-show-chart145"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>82%</td>
-    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td>
+    <td>86%</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.97</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.87</td>
     <td><a class="js-show-chart146"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>82%</td>
-    <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.71</td>
-    <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td>
+    <td>79%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.17</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
     <td><a class="js-show-chart147"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1342,58 +1343,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>83%</td>
-    <td>0.84</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.82</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.67</td>
-    <td>0.91</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.73</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td> <a class="js-show-chart148"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>35%</td>
-    <td>0.84</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.83</td> 
-    <td>0.32</td> <td>0.00</td> <td>0.49</td> <td>0.00</td> <td>0.65</td>
-    <td>0.47</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.73</td>
+    <td>48%</td>
+    <td>0.75</td> <td>0.00</td> <td>0.07</td> <td>0.07</td> <td>0.00</td> 
+    <td>0.59</td> <td>0.00</td> <td>0.46</td> <td>0.23</td> <td>0.00</td>
+    <td>0.66</td> <td>0.00</td> <td>0.12</td> <td>0.10</td> <td>0.00</td>
     <td><a class="js-show-chart149"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>83%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.68</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.96</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
     <td><a class="js-show-chart150"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
     <td>83%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.61</td>
-    <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.70</td>
+    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.55</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td>
     <td><a class="js-show-chart151"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>78%</td>
+    <td>76%</td>
     <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart152"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>83%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.65</td>
+    <td>82%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
+    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.60</td>
     <td><a class="js-show-chart153"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>83%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
-    <td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.68</td>
+    <td>80%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.93</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
     <td><a class="js-show-chart154"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -1405,58 +1406,58 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>77%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.17</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
+<td>78%</td>
+<td>0.79</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.60</td> 
+<td>0.99</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.11</td>
+<td>0.88</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.19</td>
 <td> <a class="js-show-chart155"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>39%</td>
-<td>0.76</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.00</td> 
-<td>0.46</td> <td>0.00</td> <td>0.47</td> <td>0.00</td> <td>0.00</td>
-<td>0.58</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.00</td>
+<td>67%</td>
+<td>0.81</td> <td>0.33</td> <td>0.07</td> <td>0.00</td> <td>0.84</td> 
+<td>0.83</td> <td>0.00</td> <td>0.28</td> <td>0.00</td> <td>0.10</td>
+<td>0.82</td> <td>0.00</td> <td>0.12</td> <td>0.00</td> <td>0.18</td>
 <td><a class="js-show-chart156"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>79%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
+<td>77%</td>
+<td>0.79</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
+<td>0.96</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
+<td>0.87</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.26</td>
 <td><a class="js-show-chart157"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
 <td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.58</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
 <td><a class="js-show-chart158"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
 <td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
 <td><a class="js-show-chart159"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
 <td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
 <td><a class="js-show-chart160"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>80%</td>
-<td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
+<td>79%</td>
+<td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.67</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.21</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.32</td>
 <td><a class="js-show-chart161"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1465,18 +1466,18 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.21</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
+<td>79%</td>
+<td>0.80</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.62</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.30</td>
 <td> <a class="js-show-chart162"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>30%</td>
-<td>0.81</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.63</td> 
-<td>0.31</td> <td>0.00</td> <td>0.78</td> <td>0.00</td> <td>0.11</td>
-<td>0.45</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> <td>0.19</td>
+<td>43%</td>
+<td>0.72</td> <td>0.10</td> <td>0.05</td> <td>0.00</td> <td>0.64</td> 
+<td>0.51</td> <td>0.02</td> <td>0.43</td> <td>0.00</td> <td>0.04</td>
+<td>0.60</td> <td>0.03</td> <td>0.09</td> <td>0.00</td> <td>0.08</td>
 <td><a class="js-show-chart163"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
@@ -1489,10 +1490,10 @@
 </tr>
 <tr>
 <td>SGDClassifier</td>
-<td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
+<td>79%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.07</td>
 <td><a class="js-show-chart165"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
@@ -1506,17 +1507,17 @@
 <tr>
 <td>PassiveAggressiveClassifier</td>
 <td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.57</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.81</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
 <td><a class="js-show-chart167"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>79%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.63</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.22</td>
 <td><a class="js-show-chart168"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -1529,57 +1530,57 @@
 <tr>
     <td>LSTM</td>
     <td>80%</td>
-    <td>0.82</td> <td>0.00</td> <td>0.14</td> <td>0.00</td> <td>0.76</td>
-    <td>0.97</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.42</td>
-    <td>0.89</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.54</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td>
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.30</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.43</td>
     <td> <a class="js-show-chart169"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>62%</td>
-    <td>0.83</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.75</td> 
-    <td>0.74</td> <td>0.00</td> <td>0.40</td> <td>0.00</td> <td>0.20</td>
-    <td>0.78</td> <td>0.00</td> <td>0.13</td> <td>0.00</td> <td>0.32</td>
+    <td>55%</td>
+    <td>0.76</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.49</td> 
+    <td>0.64</td> <td>0.00</td> <td>0.20</td> <td>0.00</td> <td>0.34</td>
+    <td>0.70</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.41</td>
     <td><a class="js-show-chart170"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>74%</td>
-    <td>0.78</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
-    <td>0.94</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-    <td>0.85</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+    <td>80%</td>
+    <td>0.81</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
     <td><a class="js-show-chart171"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>79%</td>
-    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td> 
-    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.15</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
+    <td>82%</td>
+    <td>0.83</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.78</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.54</td>
+    <td>0.90</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.64</td>
     <td><a class="js-show-chart172"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>77%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart173"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
     <td>79%</td>
-    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
-    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.26</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
     <td><a class="js-show-chart174"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>80%</td>
-    <td>0.80</td> <td>0.00</td> <td>0.000</td> <td>0.00</td> <td>0.77</td> 
-    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
-    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td>
+    <td>81%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.34</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
     <td><a class="js-show-chart175"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1588,58 +1589,58 @@
 </tr>
 <tr>
     <td>LSTM</td>
-    <td>84%</td>
-    <td>0.86</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.78</td> 
-    <td>0.96</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.85</td>
-    <td>0.91</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.81</td>
+    <td>81%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.03</td> <td>0.00</td> <td>0.42</td>
+    <td>0.89</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.54</td>
     <td> <a class="js-show-chart176"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
     <td>CNN</td>
-    <td>59%</td>
-    <td>0.79</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.78</td> 
-    <td>0.90</td> <td>0.00</td> <td>0.22</td> <td>0.00</td> <td>0.34</td>
-    <td>0.74</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.48</td>
+    <td>55%</td>
+    <td>0.86</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.75</td> 
+    <td>0.65</td> <td>0.00</td> <td>0.30</td> <td>0.00</td> <td>0.27</td>
+    <td>0.74</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.40</td>
     <td><a class="js-show-chart177"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>MultinomialNB</td>
-    <td>82%</td>
-    <td>0.84</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
-    <td>0.95</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td>
-    <td>0.89</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.75</td>
+    <td>78%</td>
+    <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td> 
+    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.15</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
     <td><a class="js-show-chart178"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>SGDClassifier</td>
-    <td>84%</td>
-    <td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td>
-    <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td>
+    <td>81%</td>
+    <td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.51</td>
     <td><a class="js-show-chart179"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>BernoulliNB</td>
-    <td>70%</td>
-    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.18</td> 
-    <td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.24</td>
-    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
+    <td>78%</td>
+    <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+    <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+    <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
     <td><a class="js-show-chart180"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>PassiveAggressiveClassifier</td>
-    <td>84%</td>
-    <td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.71</td>
-    <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.74</td>
+    <td>80%</td>
+    <td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
     <td><a class="js-show-chart181"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
     <td>XGBoost</td>
-    <td>85%</td>
-    <td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
-    <td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.82</td>
-    <td>0.91</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td>
+    <td>81%</td>
+    <td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.75</td> 
+    <td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
+    <td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
     <td><a class="js-show-chart182"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -1651,58 +1652,58 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>79%</td>
-<td>0.80</td> <td>0.00</td> <td>0.17</td> <td>0.00</td> <td>0.77</td>
-<td>0.98</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.26</td>
-<td>0.88</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.38</td>
+<td>80%</td>
+<td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td>
+<td>0.94</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.63</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.70</td>
 <td> <a class="js-show-chart183"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>28%</td>
-<td>0.90</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.79</td> 
-<td>0.21</td> <td>0.00</td> <td>0.75</td> <td>0.00</td> <td>0.82</td>
-<td>0.33</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.81</td>
+<td>62%</td>
+<td>0.85</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.77</td> 
+<td>0.68</td> <td>0.00</td> <td>0.33</td> <td>0.00</td> <td>0.70</td>
+<td>0.75</td> <td>0.00</td> <td>0.70</td> <td>0.00</td> <td>0.73</td>
 <td><a class="js-show-chart184"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>78%</td>
-<td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
-<td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.21</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.33</td>
+<td>80%</td>
+<td>0.81</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td>
+<td>0.89</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
 <td><a class="js-show-chart185"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
-<td>80%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.28</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td>
+<td>83%</td>
+<td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.58</td>
+<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.67</td>
 <td><a class="js-show-chart186"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
 <td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.29</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
 <td><a class="js-show-chart187"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
-<td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.83</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+<td>79%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.15</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.25</td>
 <td><a class="js-show-chart188"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
 <td>81%</td>
-<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.41</td>
-<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
+<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td>
+<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.44</td>
 <td><a class="js-show-chart189"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1711,34 +1712,34 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>76%</td>
-<td>0.80</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.00</td> 
-<td>0.96</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.00</td>
-<td>0.87</td> <td>0.00</td> <td>0.08</td> <td>0.00</td> <td>0.00</td>
+<td>77%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.31</td> 
+<td>0.98</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.08</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
 <td> <a class="js-show-chart190"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>49%</td>
-<td>0.79</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.00</td> 
-<td>0.60</td> <td>0.00</td> <td>0.43</td> <td>0.00</td> <td>0.00</td>
-<td>0.68</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.00</td>
+<td>50%</td>
+<td>0.77</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>1.00</td> 
+<td>0.63</td> <td>0.00</td> <td>0.25</td> <td>0.00</td> <td>0.00</td>
+<td>0.69</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.01</td>
 <td><a class="js-show-chart191"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>69%</td>
-<td>0.77</td> <td>0.01</td> <td>0.07</td> <td>0.00</td> <td>0.00</td> 
-<td>0.88</td> <td>0.01</td> <td>0.09</td> <td>0.00</td> <td>0.00</td>
-<td>0.82</td> <td>0.01</td> <td>0.08</td> <td>0.00</td> <td>0.00</td>
+<td>76%</td>
+<td>0.77</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>1.00</td> 
+<td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>0.86</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
 <td><a class="js-show-chart192"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
 <td>78%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
 <td><a class="js-show-chart193"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
@@ -1746,23 +1747,23 @@
 <td>78%</td>
 <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.19</td> 
 <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
 <td><a class="js-show-chart194"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
-<td>72%</td>
-<td>0.77</td> <td>0.00</td> <td>0.00</td> <td>0.11</td> <td>0.00</td> 
-<td>0.92</td> <td>0.00</td> <td>0.00</td> <td>0.58</td> <td>0.00</td>
-<td>0.84</td> <td>0.00</td> <td>0.00</td> <td>0.19</td> <td>0.00</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.68</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
 <td><a class="js-show-chart195"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
 <td>79%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.67</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
 <td><a class="js-show-chart196"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!-- Step 5-10 -->
@@ -1773,58 +1774,58 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>77%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
-<td>0.93</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td>
+<td>79%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.85</td>
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
 <td> <a class="js-show-chart197"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>74%</td>
-<td>0.83</td> <td>0.23</td> <td>0.09</td> <td>0.00</td> <td>0.77</td> 
-<td>0.85</td> <td>0.01</td> <td>0.22</td> <td>0.00</td> <td>0.57</td>
-<td>0.84</td> <td>0.01</td> <td>0.13</td> <td>0.00</td> <td>0.66</td>
+<td>60%</td>
+<td>0.79</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.76</td> 
+<td>0.74</td> <td>0.00</td> <td>0.30</td> <td>0.00</td> <td>0.09</td>
+<td>0.76</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.15</td>
 <td><a class="js-show-chart198"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>77%</td>
+<td>79%</td>
 <td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.70</td> 
-<td>0.97</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.17</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.27</td>
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td>
 <td><a class="js-show-chart199"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
 <td>79%</td>
-<td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.26</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.21</td>
 <td><a class="js-show-chart200"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
-<td>76%</td>
-<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>78%</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
 <td><a class="js-show-chart201"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
 <td>78%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
+<td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.80</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.03</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
 <td><a class="js-show-chart202"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>83%</td>
-<td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
-<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.64</td>
+<td>80%</td>
+<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.72</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
+<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
 <td><a class="js-show-chart203"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1833,58 +1834,58 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>74%</td>
-<td>0.81</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.69</td> 
-<td>0.87</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.53</td>
-<td>0.83</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.60</td>
+<td>82%</td>
+<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.72</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.46</td>
+<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
 <td> <a class="js-show-chart204"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
 <td>64%</td>
-<td>0.81</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.80</td> 
-<td>0.73</td> <td>0.00</td> <td>0.16</td> <td>0.00</td> <td>0.65</td>
-<td>0.88</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.72</td>
+<td>0.84</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.75</td> 
+<td>0.77</td> <td>0.00</td> <td>0.21</td> <td>0.00</td> <td>0.27</td>
+<td>0.81</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.39</td>
 <td><a class="js-show-chart205"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>78%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
-<td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
+<td>81%</td>
+<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
+<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.49</td>
 <td><a class="js-show-chart206"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
 <td>81%</td>
-<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.40</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.52</td>
+<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.42</td>
+<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td>
 <td><a class="js-show-chart207"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
-<td>78%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.28</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.09</td>
+<td>77%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart208"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
-<td>81%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.76</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
+<td>82%</td>
+<td>0.83</td> <td>0.00</td> <td>0.15</td> <td>0.00</td> <td>0.74</td> 
+<td>0.98</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.55</td>
+<td>0.90</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.63</td>
 <td><a class="js-show-chart209"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>82%</td>
-<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.73</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.45</td>
-<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.56</td>
+<td>81%</td>
+<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.77</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.34</td>
+<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.47</td>
 <td><a class="js-show-chart210"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
@@ -1896,58 +1897,58 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>81%</td>
-<td>0.82</td> <td>0.00</td> <td>0.17</td> <td>0.00</td> <td>0.62</td> 
-<td>0.98</td> <td>0.00</td> <td>0.01</td> <td>0.00</td> <td>0.40</td>
-<td>0.89</td> <td>0.00</td> <td>0.02</td> <td>0.00</td> <td>0.49</td>
+<td>72%</td>
+<td>0.71</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.27</td> 
+<td>0.87</td> <td>0.00</td> <td>0.05</td> <td>0.00</td> <td>0.35</td>
+<td>0.84</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.31</td>
 <td> <a class="js-show-chart211"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>57%</td>
-<td>0.87</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.78</td> 
-<td>0.62</td> <td>0.00</td> <td>0.26</td> <td>0.00</td> <td>0.75</td>
-<td>0.72</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.77</td>
+<td>68%</td>
+<td>0.85</td> <td>0.00</td> <td>0.06</td> <td>0.00</td> <td>0.01</td> 
+<td>0.85</td> <td>0.00</td> <td>0.17</td> <td>0.00</td> <td>0.00</td>
+<td>0.85</td> <td>0.00</td> <td>0.09</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart212"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>78%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.60</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
-<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td>
+<td>73%</td>
+<td>0.78</td> <td>0.02</td> <td>0.06</td> <td>0.00</td> <td>0.00</td> 
+<td>0.92</td> <td>0.02</td> <td>0.02</td> <td>0.00</td> <td>0.00</td>
+<td>0.85</td> <td>0.02</td> <td>0.03</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart213"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
-<td>80%</td>
-<td>0.81</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.66</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.24</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.36</td>
+<td>76%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td> 
+<td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+<td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.06</td>
 <td><a class="js-show-chart214"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
-<td>74%</td>
+<td>76%</td>
 <td>0.78</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
-<td>0.94</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
-<td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.96</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart215"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>PassiveAggressiveClassifier</td>
-<td>79%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.39</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td>
+<td>77%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.04</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.01</td>
 <td><a class="js-show-chart216"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>81%</td>
-<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.71</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td>
-<td>0.89</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.50</td>
+<td>78%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.87</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart217"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <!--CNN-->
@@ -1956,40 +1957,40 @@
 </tr>
 <tr>
 <td>LSTM</td>
-<td>75%</td>
-<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.37</td> 
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.59</td>
-<td>0.85</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.45</td>
+<td>78%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.38</td> 
+<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.10</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.16</td>
 <td> <a class="js-show-chart218"> <i class="fa fa-bar-chart"></i> </a> </td>
 </tr>
 <tr>
 <td>CNN</td>
-<td>35%</td>
-<td>0.77</td> <td>0.01</td> <td>0.05</td> <td>0.00</td> <td>0.48</td> 
-<td>0.37</td> <td>0.00</td> <td>0.56</td> <td>0.00</td> <td>0.36</td>
-<td>0.50</td> <td>0.00</td> <td>0.10</td> <td>0.00</td> <td>0.41</td>
+<td>50%</td>
+<td>0.85</td> <td>0.00</td> <td>0.04</td> <td>0.00</td> <td>0.69</td> 
+<td>0.59</td> <td>0.00</td> <td>0.27</td> <td>0.00</td> <td>0.25</td>
+<td>0.70</td> <td>0.00</td> <td>0.07</td> <td>0.00</td> <td>0.37</td>
 <td><a class="js-show-chart219"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>MultinomialNB</td>
-<td>82%</td>
-<td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.79</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.48</td>
-<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.60</td>
+<td>75%</td>
+<td>0.79</td> <td>0.02</td> <td>0.00</td> <td>0.00</td> <td>0.52</td> 
+<td>0.94</td> <td>0.01</td> <td>0.00</td> <td>0.00</td> <td>0.08</td>
+<td>0.86</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.14</td>
 <td><a class="js-show-chart220"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>SGDClassifier</td>
-<td>82%</td>
-<td>0.82</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.69</td> 
-<td>0.98</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.53</td>
-<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.60</td>
+<td>79%</td>
+<td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.12</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
 <td><a class="js-show-chart221"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>BernoulliNB</td>
 <td>79%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>1.00</td> 
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
 <td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart222"><i class="fa fa-bar-chart"></i></a></td>
@@ -1997,17 +1998,17 @@
 <tr>
 <td>PassiveAggressiveClassifier</td>
 <td>79%</td>
-<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.94</td> 
-<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.02</td>
-<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.05</td>
+<td>0.80</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.54</td> 
+<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.13</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.20</td>
 <td><a class="js-show-chart223"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td>83%</td>
-<td>0.83</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.78</td> 
-<td>0.99</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.52</td>
-<td>0.90</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.62</td>
+<td>79%</td>
+<td>0.79</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> 
+<td>1.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
+<td>0.88</td> <td>0.00</td> <td>0.00</td> <td>0.00</td> <td>0.00</td>
 <td><a class="js-show-chart224"><i class="fa fa-bar-chart"></i></a></td>
 </tr>
 
